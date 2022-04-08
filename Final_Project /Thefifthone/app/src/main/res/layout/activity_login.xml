@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/firstbackground"
+            android:orientation="vertical"
+            android:layout_margin="0dp">
+
+            <TextView
+                android:id="@+id/titleoflogin"
+                android:textSize="35dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:text="2book4U"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/loginid"
+                    android:textSize="35dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:text="Вход"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"/>
+
+                <EditText
+                    android:id="@+id/loginusername"
+                    android:textColor="@color/colordark"
+                    android:background="@drawable/username_login_button"
+                    android:layout_width="wrap_content"
+                    android:textColorHint="@color/hint"
+                    android:layout_height="35dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:layout_gravity="center"
+                    android:inputType="textPersonName"
+                    android:hint="Имя пользователя"
+                    />
+                <EditText
+                    android:id="@+id/loginpassword"
+                    android:textColorHint="@color/hint"
+                    android:background="@drawable/username_login_button"
+                    android:textColor="@color/colordark"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:ems="10"
+                    android:layout_gravity="center"
+                    android:hint="Пароль"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/buttonlogin"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:ems="12"
+                    android:layout_marginTop="30dp"
+                    android:onClick="btnLoginClicked"
+                    android:text="Войти"/>
+
+                <Button
+                    android:id="@+id/buttonsignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/login_button"
+                    android:layout_gravity="center"
+                    android:ems="12"
+                    android:onClick="btnOpenSignUpClicked"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Зарегестрироваться"/>
+
+            </LinearLayout>
+
+        </LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/firstbackground"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/profilephoto"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/www"/>
+
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:ems="15"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="-10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:text="Имя"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/txtName"
+            android:text="First name"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="25dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:text="Фамилия"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="25dp"
+            android:ems="15"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/txtLastNameofuser"
+            android:text="Last name"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="25dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:text="Номер телефона"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="25dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/txtphonenumber"
+            android:text="Phone number"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="25dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:text="Электронная почта"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="25dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:text="Email adress"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="25dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"/>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:ems="15"
+            android:text="Редактировать профиль"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/login_button"
+            android:id="@+id/buttonchange"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:onClick="buttonlogout"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:ems="15"
+            android:text="Выход"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/login_button"
+            android:id="@+id/buttonlogout"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+
+

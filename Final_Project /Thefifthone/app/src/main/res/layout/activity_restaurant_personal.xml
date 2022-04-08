@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/firstbackground"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:id="@+id/personalimage"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_home_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:paddingLeft="25dp"
+        android:text="Информация о ресторане"
+        android:textSize="23dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="название"
+        android:layout_marginTop="150dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/personalname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="150dp"
+        android:text="name"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="адрес"
+        android:layout_marginTop="180dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/personallocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="180dp"
+        android:text="location"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textViewKitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="кухня"
+        android:layout_marginTop="210dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/personalkitchenrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="210dp"
+        android:text="kitchen"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textViewrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="рейтинг"
+        android:layout_marginTop="240dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="240dp"
+        android:text="rating"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textViewtimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="график"
+            android:layout_marginTop="270dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/timetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="270dp"
+            android:text="timetable"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textViewphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="телефон"
+            android:layout_marginTop="300dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="300dp"
+            android:text="phone"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/Reservetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="345dp"
+        android:layout_marginLeft="40dp"
+        android:text="Резерв"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/personalDate"
+        android:textColor="@color/colordark"
+        android:background="@drawable/username_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="395dp"
+        android:ems="9"
+        android:hint="Дата в формате pm"
+        android:textSize="15dp"
+        android:inputType="datetime"
+        />
+    <EditText
+        android:id="@+id/personalpeople"
+        android:textColor="@color/colordark"
+        android:background="@drawable/username_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="440dp"
+        android:ems="9"
+        android:textSize="15dp"
+        android:hint="Количество персон"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/reservebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="savereserveClick"
+        android:layout_marginTop="500dp"
+        android:text="Забронировать"
+        android:ems="10"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/login_button"/>
+
+        <Button
+            android:id="@+id/btnCreateFight"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="397dp"
+            android:layout_marginLeft="95dp"
+            android:text="Установить дату"
+            android:ems="10"
+            android:layout_gravity="center_horizontal"
+            android:onClick="btnCreateFightClicked"
+            android:textColor="@color/colorPrimary"
+            android:textSize="9dp"
+            android:background="@drawable/setdate"/>
+
+    </FrameLayout>
+
+
+
+</FrameLayout>

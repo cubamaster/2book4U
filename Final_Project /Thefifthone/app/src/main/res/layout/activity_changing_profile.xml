@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/firstbackground"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@drawable/border">
+
+        <TextView
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:text="Редактирование профиля"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:text="имя пользователя"
+            android:textSize="15dp"
+            android:paddingLeft="4dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editusername"
+            android:layout_marginTop="-10dp"
+            android:hint="Enter"
+            android:textSize="17dp"
+            android:textColorHint="@color/colorPrimary"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:text="пароль"
+            android:textSize="15dp"
+            android:paddingLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <EditText
+            android:id="@+id/editpassword"
+            android:inputType="textPassword"
+            android:layout_marginTop="-10dp"
+            android:hint="Впишите новый пароль"
+            android:textSize="17dp"
+            android:textColor="@color/colorPrimary"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <TextView
+            android:text="подтверждение пароля"
+            android:textSize="15dp"
+            android:paddingLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editconfirmpassword"
+            android:inputType="textPassword"
+            android:layout_marginTop="-10dp"
+            android:hint="Подтвердите новый пароль"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:text="имя"
+            android:textSize="15dp"
+            android:paddingLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <EditText
+            android:id="@+id/editname"
+            android:hint="Введите новое имя"
+            android:layout_marginTop="-10dp"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <TextView
+            android:text="номер телефона"
+            android:textSize="15dp"
+            android:paddingLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <EditText
+            android:id="@+id/editphone"
+            android:inputType="numberDecimal"
+            android:hint="Введите новый номер телефона"
+            android:layout_marginTop="-10dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="17dp"
+            android:ems="15"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="почта"
+            android:paddingLeft="4dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/editmail"
+            android:inputType="textWebEmailAddress"
+            android:hint="Введите новый email"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:ems="15"
+            android:layout_marginTop="-10dp"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonsavechanges"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingTop="10dp"
+            android:ems="15"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/login_button"
+            android:onClick="buttonsaveChanges"
+            android:text="сохранить изменения"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+
+
